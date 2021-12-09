@@ -1,0 +1,7 @@
+{
+  "extends": "next/core-web-vitals",
+  "ignorePatterns": ["src/generated"],
+  "rules": {
+    "import/no-unresolved": [2, { "ignore": [".graphql", ".gql"] }]
+  }
+}

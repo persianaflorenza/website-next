@@ -1,0 +1,22 @@
+{
+  "name": "DatoCMS GraphQL Schema",
+  "projects": {
+    "Persianas DatoCMS": {
+      "schemaPath": "generated/schema.schema.graphql",
+      "includes": [
+        "queries/*.gql"
+      ],
+      "extensions": {
+        "endpoints": {
+          "default": {
+            "url": "${env:NEXT_PUBLIC_DATOCMS_API_URL}",
+            "headers": {
+              "Authorization": "Bearer ${env:NEXT_PUBLIC_DATOCMS_API_KEY}"
+            },
+            "introspect": true
+          }
+        }
+      }
+    }
+  }
+}

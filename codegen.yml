@@ -1,0 +1,17 @@
+generates:
+  generated/schema.ts:
+    schema:
+      - ${NEXT_PUBLIC_DATOCMS_API_URL}:
+          headers:
+            Authorization: Bearer ${NEXT_PUBLIC_DATOCMS_API_KEY}
+    plugins:
+      - typescript
+      - typescript-operations
+    documents: queries/*.gql
+    config:
+      skipTypename: true
+      avoidOptionals: true
+      omitOperationSuffix: true
+      flattenGeneratedTypes: true
+      namingConvention:
+        enumValues: keep
