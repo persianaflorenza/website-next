@@ -10,7 +10,7 @@ type AboutProps = {
 };
 export const About = ({ title, description, leftImage, leftText }: AboutProps) => {
   return (
-    <Container className="my-8" >
+    <Container className="my-8">
       <h1 id="sobre" className="font-brush text-7xl font-normal capitalize text-navy-500">
         {title}
       </h1>
@@ -22,7 +22,7 @@ export const About = ({ title, description, leftImage, leftText }: AboutProps) =
               layout="fill"
               height="100%"
               title=""
-              src={(leftImage?.responsiveImage.src || '') as string}
+              src={(leftImage?.responsiveImage?.src || '') as string}
               alt="Sobre Florenza Periana"
             />
           </div>
