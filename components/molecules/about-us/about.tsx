@@ -27,13 +27,13 @@ export const About = ({ title, description, leftImage, leftText }: AboutProps) =
             />
           </div>
 
-          <span className="absolute leading-normal text-navy-500 font-extrabold text-7xl break-words left-16 top-10 w-114">
+          <span className="absolute leading-normal text-navy-500 font-extrabold  text-5xl lg:text-7xl break-words left-4 md:left-16 top-10 lg:w-114">
             {`${leftText}`}
           </span>
         </div>
 
         <div
-          className="leading-loose w-144 text-gray-500 text-lg"
+          className="leading-loose lg:w-144 text-gray-500 text-lg"
           dangerouslySetInnerHTML={{ __html: description }}
         />
       </div>
